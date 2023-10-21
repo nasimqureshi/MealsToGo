@@ -1,21 +1,12 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screes";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Our react native blank canvas</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <RestaurantsScreen />
+      <ExpoStatusBar />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
